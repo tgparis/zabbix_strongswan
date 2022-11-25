@@ -9,8 +9,8 @@
     </groups>
     <templates>
         <template>
-            <template>Pfsense IPSec tunnels</template>
-            <name>Pfsense IPSec tunnels</name>
+            <template>Strongswan IPSec tunnels</template>
+            <name>Strongswan IPSec tunnels</name>
             <description/>
             <groups>
                 <group>
@@ -269,7 +269,7 @@
                     </item_prototypes>
                     <trigger_prototypes>
                         <trigger_prototype>
-                            <expression>{Pfsense IPSec tunnels:ipsec.tunnel[{#TUNNEL}].last(0)}&lt;&gt;0</expression>
+                            <expression>{Strongswan IPSec tunnels:ipsec.tunnel[{#TUNNEL}].last(0)}&lt;&gt;0</expression>
                             <recovery_mode>0</recovery_mode>
                             <recovery_expression/>
                             <name>Tunnel: {#DESCRIPTION} - {#TUNNEL}  down</name>
@@ -321,7 +321,7 @@
                                     <calc_fnc>2</calc_fnc>
                                     <type>0</type>
                                     <item>
-                                        <host>Pfsense IPSec tunnels</host>
+                                        <host>Strongswan IPSec tunnels</host>
                                         <key>ipsec.traffic[{#TUNNEL},&quot;pktsIn&quot;]</key>
                                     </item>
                                 </graph_item>
@@ -333,7 +333,7 @@
                                     <calc_fnc>2</calc_fnc>
                                     <type>0</type>
                                     <item>
-                                        <host>Pfsense IPSec tunnels</host>
+                                        <host>Strongswan IPSec tunnels</host>
                                         <key>ipsec.traffic[{#TUNNEL},&quot;pktsOut&quot;]</key>
                                     </item>
                                 </graph_item>
@@ -365,7 +365,7 @@
                                     <calc_fnc>2</calc_fnc>
                                     <type>0</type>
                                     <item>
-                                        <host>Pfsense IPSec tunnels</host>
+                                        <host>Strongswan IPSec tunnels</host>
                                         <key>ipsec.traffic[{#TUNNEL},&quot;bytesIn&quot;]</key>
                                     </item>
                                 </graph_item>
@@ -377,7 +377,7 @@
                                     <calc_fnc>2</calc_fnc>
                                     <type>0</type>
                                     <item>
-                                        <host>Pfsense IPSec tunnels</host>
+                                        <host>Strongswan IPSec tunnels</host>
                                         <key>ipsec.traffic[{#TUNNEL},&quot;bytesOut&quot;]</key>
                                     </item>
                                 </graph_item>
@@ -409,7 +409,7 @@
                                     <calc_fnc>2</calc_fnc>
                                     <type>0</type>
                                     <item>
-                                        <host>Pfsense IPSec tunnels</host>
+                                        <host>Strongswan IPSec tunnels</host>
                                         <key>ipsec.tunnel[{#TUNNEL}]</key>
                                     </item>
                                 </graph_item>
